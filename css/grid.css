@@ -1,0 +1,45 @@
+.propaganda-aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+header{
+    grid-area: header;
+}
+.propaganda-header{
+    grid-area: propagando-header;
+}
+.descrição{
+    grid-area: descrição;
+}
+.propaganda-footer{
+    grid-area: propaganda-footer;
+}
+footer{
+    grid-area: footer;
+}
+.descrição-2{
+    grid-area:descrição-2 ;
+}
+.descrição-3{
+    grid-area: descrição-3;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "propagando-header propagando-header propagando-header"
+    ".   main   aside"
+    ".  descrição  aside"
+    ". descrição-2 aside"
+    ". descrição-3 aside"
+    "propaganda-footer propaganda-footer propaganda-footer"
+    "footer footer footer";
+    grid-template-columns: 1fr 5fr 1fr;
+    
+}
